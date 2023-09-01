@@ -37,6 +37,9 @@ public class Gamer {
     @Column(name = "gamer_active", nullable = false)
     private boolean active = true;
 
+    @Column(name = "gamer_role",nullable = false)
+    private Role role;
+
     @ManyToMany
     @JoinTable(
             name = "games_played",
